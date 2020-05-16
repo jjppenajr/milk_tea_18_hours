@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  template: template0
+  pool: 5
+  host: localhost
+  username: postgres
+  password: root
+
+development:
+  <<: *default
+  database: 18_hours_milk_tea_development
+
+test:
+  <<: *default
+  database: 18_hours_milk_tea_test
+
+staging:
+  <<: *default
+  database: 18_hours_milk_tea_staging
+
+production:
+  <<: *default
+  database: 18_hours_milk_tea_production
