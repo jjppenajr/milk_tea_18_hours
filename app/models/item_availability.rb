@@ -1,0 +1,2 @@
+class ItemAvailability < ApplicationRecord
+end
